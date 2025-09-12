@@ -155,7 +155,7 @@ const About = () => {
                       </p>
                       <p>
                         My journey in product management has taken me through
-                        diverse projects — from building AI-powered safety
+                        diverse projects from building AI-powered safety
                         solutions using computer vision to developing carbon
                         monitoring platforms and biotech investor portals. I
                         excel at aligning technical feasibility with business

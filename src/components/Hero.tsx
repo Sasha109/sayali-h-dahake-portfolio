@@ -61,7 +61,7 @@ const Hero = () => {
             }`}
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-2 leading-tight  px-4 max-w-4xl mx-auto">
-              <span className="block">Sayali H</span>
+              <span className="block">Sayali Hemant</span>
               <span className="block bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent break-words pb-0 sm:pb-4">
                 Dahake
               </span>
@@ -88,8 +88,8 @@ const Hero = () => {
                   Codemonk
                 </span>
                 , with expertise in product strategy, AI-powered solutions, and
-                building platforms that connect startups with mentors and
-                investors.
+                platform development. Skilled at defining roadmaps, aligning Stakeholders, 
+                and delivering masurable business outcomes.
               </p>
 
               {/* Key Highlights */}
@@ -99,6 +99,11 @@ const Hero = () => {
                   "Agile/Scrum",
                   "AI Solutions",
                   "Cross-functional Leadership",
+                  "Client Communication",
+                  "Project Execution",
+                  "Release Management",
+                  "Scope Management",
+                  "Change Management",
                 ].map((highlight, index) => (
                   <span
                     key={highlight}

@@ -8,15 +8,15 @@ const Projects = () => {
       title: "AI-Powered Safety Solution",
       category: "Computer Vision Platform",
       description:
-        "Led the development of a vision-based safety monitoring tool that detects 16+ safety violations using YOLOv7 computer vision technology for real-time workplace safety compliance.",
+        "Drove end-to-end product development of a vision-based workplace safety monitoring solution. Collaborated with engineering and ML teams to design and deliver a system capable of detecting 16+ workplace safety violations in real-time. Defined product roadmap, communication with industrial clients, and ensured seamless integration of computer vision technology into safety operations.",
       achievements: [
-        "Implemented advanced computer vision algorithms for real-time safety violation detection",
-        "Developed comprehensive safety rule engine supporting 16+ different violation types",
-        "Created real-time alert system with dashboard for safety managers and supervisors",
-        "Achieved 95%+ accuracy in safety violation detection across multiple industrial environments",
+        "Translated safety compliance needs into product features, resulting in a scalable rule engine for 16+ violation types.",
+        "Prioritized and delivered MVP, followed by iterative improvements to reach 80%+ detection accuracy across varied environments.",
+        "Enabled real-time alerts and dashboards for supervisors, improving incident response time and reducing workplace safety risks.", 
+        "Coordinated cross-functional teams (ML engineers, developers, QA, and UI designers) to deliver the product on time and within scope.",
       ],
       technologies: [
-        "YOLOv7",
+        "Stakeholder Reporting",
         "Computer Vision",
         "Python",
         "Real-time Processing",
@@ -40,13 +40,48 @@ const Projects = () => {
       ),
       link: "",
     },
+        {
+      title: "Music Metadata Enrichment Solution",
+      category: "Media Metadata Enrichment",
+      description:
+        "Led the end-to-end delivery of a metadata enrichment solution for a global media client to improve searchability and monetization of songs across their massive archive. Oversaw product definition, sprint planning, and client communication to ensure metadata captured song mood, visuals, and context for enhanced discoverability.",
+      achievements: [
+        "Partnered with client to define metadata attributes, priorities, and scale of implementation.",
+        "Structured the execution into three milestones: ML algorithm development, backend integration, and large-scale dataset processing.",
+        "Reviewed PRDs and defined QA/UAT processes, ensuring high data accuracy and deployment readiness.",
+        "Delivered APIs, metadata schema, and cloud configurations enabling business-as-usual ingestion of enriched content.",
+        "Facilitated cross-functional collaboration across ML, DevOps, and QA teams, while managing regular client updates and reviews.",
+      ],
+      technologies: [
+        "Large Data Anaysis",
+        "Cloud Deployment & Scalability",
+        "API & Backend Productization",
+      ],
+      icon: (
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+          />
+        </svg>
+      ),
+      link: "",
+    },
     {
       title: "Carbon Platform",
       category: "Sustainability Dashboard",
       description:
-        "Developed a real-time carbon monitoring and reduction platform providing comprehensive analytics and actionable insights for environmental sustainability initiatives.",
+        "Led a real-time carbon monitoring and reduction platform providing comprehensive analytics and actionable insights for environmental sustainability initiatives.",
       achievements: [
-        "Built real-time carbon emission tracking and monitoring dashboard",
+        "Planned development for real-time carbon emission tracking and monitoring dashboard",
         "Implemented data visualization for carbon footprint analysis and reduction strategies",
         "Created automated reporting system for sustainability compliance and ESG metrics",
         "Integrated with multiple data sources for comprehensive environmental impact assessment",
@@ -80,12 +115,12 @@ const Projects = () => {
       title: "Biotech Investor Portal",
       category: "Government Platform",
       description:
-        "Led the development of a comprehensive platform connecting biotech startups with mentors and investors, specifically designed for the Government of India's startup ecosystem.",
+        "Directed the end-to-end delivery of a government-backed platform connecting biotech startups with investors, mentors, and incubation centers. Focused on enabling transparent startup evaluation, efficient stakeholder collaboration, and seamless integration with India’s startup ecosystem.",
       achievements: [
-        "Created multi-stakeholder platform connecting biotech startups with mentors and investors",
-        "Implemented advanced matching algorithms for startup-investor pairing",
-        "Built comprehensive startup profile management and document sharing system",
-        "Developed real-time communication and collaboration tools for the biotech ecosystem",
+        "Spearheaded requirements gathering with government officials, startup founders, and investors to align the platform with ecosystem needs.",
+        "Defined product roadmap and prioritized features such as startup profile management, investor-matching algorithms, and document-sharing workflows.", 
+        "Established governance and compliance processes to meet government integration requirements.", 
+        "Delivered a scalable platform that enhanced visibility and funding opportunities for biotech startups.",
       ],
       technologies: [
         "Startup Ecosystem",
@@ -116,19 +151,18 @@ const Projects = () => {
       title: "Smart AC Buyer Platform",
       category: "Energy Efficiency Tool",
       description:
-        "Developed an intelligent platform that recommends air conditioners based on energy usage patterns and carbon impact analysis, helping consumers make sustainable purchasing decisions.",
+        "Led the design and launch of a consumer-facing sustainability platform that recommends energy-efficient air conditioners based on usage behavior, cost insights, and carbon footprint impact.",
       achievements: [
-        "Built AI-powered recommendation engine for energy-efficient AC selection",
-        "Implemented carbon footprint calculation and environmental impact assessment",
-        "Created user-friendly interface with energy consumption predictions and cost analysis",
-        "Integrated real-time energy pricing and sustainability metrics for informed decision making",
+        "Defined MVP scope balancing AI-driven recommendations, energy pricing integration, and sustainability reporting.",
+        "Prioritized UX improvements, ensuring consumers received cost-benefit comparisons in an intuitive format.",
+        "Successfully positioned the tool as both a sustainability enabler and consumer decision-support system.",
       ],
       technologies: [
         "AI Recommendations",
-        "Energy Efficiency",
+        "Energy Efficiency & Sustainability Analytics",
         "Carbon Footprint",
-        "Consumer Analytics",
-        "Sustainability",
+        "Consumer Behavior Insights",
+        "Green Tech Product Strategy",
       ],
       icon: (
         <svg
@@ -149,19 +183,24 @@ const Projects = () => {
       link: "",
     },
     {
-      title: "Image Analytics Platform",
+      title: "Video Analytics Platform",
       category: "Surveillance System",
       description:
-        "Developed a comprehensive real-time object and people detection and tracking platform for surveillance applications with advanced analytics and reporting capabilities.",
-      achievements: [
-        "Implemented real-time object detection and people tracking for surveillance systems",
-        "Built advanced analytics dashboard with customizable reporting and alert systems",
-        "Created scalable architecture supporting multiple camera feeds and concurrent processing",
-        "Developed intelligent filtering and search capabilities for surveillance footage analysis",
+        "Managed the development of a real-time video analytics platform for surveillance and security applications, enabling organizations to detect, track, and analyze activities across multiple locations.",
+      achievements:[
+        "Real-time and batch video analysis capabilities.", 
+        "Interactive heatmap overlays visualizing people and vehicle activity.", 
+        "Advanced object recognition with unique ID tracking.",
+        "Customizable transit line and zone-based counting tools.",
+        "Precise speed measurement and movement trajectory mapping.", 
+        "Comprehensive Excel export functionality.",
+        "Enabled clients to identify risk zones and high-traffic areas without manual tagging.",
+        "Streamlined reporting and compliance tracking through automated visualizations.",
+        "Reduced manual analysis time." ,
       ],
       technologies: [
         "Real-time Processing",
-        "Object Detection",
+        "Object Detection & Tracking",
         "Surveillance Analytics",
         "Multi-camera Support",
         "Video Analytics",
@@ -188,19 +227,19 @@ const Projects = () => {
       title: "3D Point Cloud Editor",
       category: "Infrastructure Modeling",
       description:
-        "Led the development of a sophisticated 3D point cloud editing platform for infrastructure modeling and 3D model generation, supporting large-scale construction and engineering projects.",
+        "Oversaw the delivery of a 3D infrastructure modeling tool supporting large-scale construction and engineering projects. The platform enabled teams to process, visualize, and edit point cloud data for digital twin creation and infrastructure planning.",
       achievements: [
-        "Built advanced 3D point cloud processing and editing capabilities",
-        "Implemented real-time 3D visualization and manipulation tools",
-        "Created infrastructure modeling workflows for construction and engineering applications",
-        "Developed scalable architecture for handling large-scale point cloud datasets",
+        "Partnered with engineering stakeholders to translate technical needs into product requirements for visualization, editing, and model generation.",
+        "Established scalable workflows to handle large datasets and integrate seamlessly with existing engineering systems.",
+        "Prioritized user-centric design, ensuring ease of use for architects, civil engineers, and construction planners.",
+        "Enabled faster infrastructure modeling cycles, improving project efficiency and decision-making accuracy.",
       ],
       technologies: [
         "3D Processing",
         "Point Cloud Editing",
         "Infrastructure Modeling",
         "3D Visualization",
-        "Engineering Tools",
+        "Engineering Tools in Construction Tech Innovation",
       ],
       icon: (
         <svg

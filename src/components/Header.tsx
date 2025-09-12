@@ -40,7 +40,7 @@ const Header = ({ activeSection }: HeaderProps) => {
               className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors truncate"
               aria-label="Go to home section"
             >
-              Sayali H Dahake
+              Sayali Hemant Dahake
             </button>
           </div>
 
