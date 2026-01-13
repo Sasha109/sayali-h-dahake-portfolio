@@ -311,9 +311,95 @@ const Projects = () => {
                   </p>
                 </div>
               </div>
-              <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-3">
-                {project.shortOverview}
-              </p>
+              {/* 30-Second Project Overview on Tile */}
+              {project.overview && (
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-800 rounded-lg p-4 border border-blue-100 dark:border-gray-600">
+                  <h4 className="text-xs font-semibold text-gray-900 dark:text-white mb-3 pb-2 border-b border-blue-200 dark:border-gray-600">
+                    30-Second Overview
+                  </h4>
+
+                  <div className="grid grid-cols-1 gap-3 mb-3 pb-3 border-b border-blue-200 dark:border-gray-600">
+                    <div className="flex items-start space-x-2">
+                      <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v1h8v-1zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                      </svg>
+                      <div>
+                        <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-1">
+                          Product Name
+                        </p>
+                        <p className="text-xs text-gray-900 dark:text-gray-100 font-medium">
+                          {project.overview.productName}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-2">
+                      <svg className="w-4 h-4 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M10.5 1.5H3a1.5 1.5 0 00-1.5 1.5v12a1.5 1.5 0 001.5 1.5h14a1.5 1.5 0 001.5-1.5V8.5m-5-5l5 5m0 0V3.5m0 5v5"/>
+                      </svg>
+                      <div>
+                        <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-1">
+                          Domain
+                        </p>
+                        <p className="text-xs text-gray-900 dark:text-gray-100 font-medium">
+                          {project.overview.domain}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-2">
+                      <svg className="w-4 h-4 text-purple-600 dark:text-purple-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v1h8v-1zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                      </svg>
+                      <div>
+                        <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-1">
+                          Role
+                        </p>
+                        <p className="text-xs text-gray-900 dark:text-gray-100 font-medium">
+                          {project.overview.role}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-2">
+                      <svg className="w-4 h-4 text-orange-600 dark:text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clipRule="evenodd"/>
+                      </svg>
+                      <div>
+                        <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-1">
+                          Timeline
+                        </p>
+                        <p className="text-xs text-gray-900 dark:text-gray-100 font-medium">
+                          {project.overview.timeline}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-2">
+                      <svg className="w-4 h-4 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"/>
+                      </svg>
+                      <div>
+                        <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-1">
+                          Platform
+                        </p>
+                        <p className="text-xs text-gray-900 dark:text-gray-100 font-medium">
+                          {project.overview.platform}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-2">
+                      Summary
+                    </p>
+                    <p className="text-xs text-gray-900 dark:text-gray-100 leading-relaxed">
+                      {project.overview.summary}
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -321,11 +407,11 @@ const Projects = () => {
         {/* Modal */}
         {modalOpen && selectedProject && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 pt-20"
             onClick={() => setModalOpen(false)}
           >
             <div
-              className="bg-white dark:bg-gray-800 rounded-xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl"
+              className="bg-white dark:bg-gray-800 rounded-xl p-8 max-w-4xl w-full max-h-[80vh] overflow-y-auto relative shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <button
