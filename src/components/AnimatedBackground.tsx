@@ -160,7 +160,7 @@ const AnimatedBackground = () => {
       const isDark = document.documentElement.classList.contains("dark");
 
       // Animate expanding waves
-      waves.forEach((wave, index) => {
+      waves.forEach((wave) => {
         wave.radius += wave.speed;
         if (wave.radius > wave.maxRadius) {
           wave.radius = 0;

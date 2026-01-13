@@ -52,29 +52,31 @@ const Experience = () => {
                   <li className="flex items-start">
                     <span className="flex-shrink-0 w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3"></span>
                     <span>
-                      Actively planned and executed sprints, review sessions,
-                      and daily standups
+                      Delivered 10+ cross-functional software products across AI, sustainability, IoT, and biotech domains
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="flex-shrink-0 w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3"></span>
                     <span>
-                      Managed and prioritized product backlogs, defined and
-                      documented detailed PRDs
+                      Actively planned and executed sprints, review sessions, and daily standups to ensure project milestones were achieved and alignment with project goals was maintained
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="flex-shrink-0 w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3"></span>
                     <span>
-                      Collaborated with stakeholders and guided creation of
-                      product documentation and onboarding flows
+                      Managed and prioritized product backlogs, defined and documented detailed PRDs, and collaborated with stakeholders to align business goals with technical feasibility
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="flex-shrink-0 w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3"></span>
                     <span>
-                      Owned sprint planning, grooming, and sprint reviews while
-                      establishing KPIs
+                      Owned sprint planning, grooming, and sprint reviews to ensure delivery velocity and team alignment
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="flex-shrink-0 w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 mr-3"></span>
+                    <span>
+                      Guided creation of product documentation, onboarding flows, and KPIs for end-user adoption and feedback loops
                     </span>
                   </li>
                 </ul>
