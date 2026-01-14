@@ -6,6 +6,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
+import Languages from "./components/Languages";
 import Contact from "./components/Contact";
 import AnimatedBackground from "./components/AnimatedBackground";
 import "./App.css";
@@ -21,6 +22,7 @@ function App() {
         "experience",
         "projects",
         "education",
+        "languages",
         "contact",
       ];
       const scrollPosition = window.scrollY + 100;
@@ -57,6 +59,7 @@ function App() {
           <Experience />
           <Projects />
           <Education />
+          <Languages />
           <Contact />
         </main>
       </div>
