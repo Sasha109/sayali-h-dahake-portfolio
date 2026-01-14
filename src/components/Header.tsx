@@ -37,10 +37,14 @@ const Header = ({ activeSection }: HeaderProps) => {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors truncate"
+              className="flex items-center space-x-2 text-lg sm:text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors truncate"
               aria-label="Go to home section"
             >
-              Sayali Hemant Dahake
+              <div className="flex items-center space-x-1">
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-green-600 dark:text-green-400">Open to work</span>
+              </div>
+              <span>Sayali Hemant Dahake</span>
             </button>
           </div>
 
