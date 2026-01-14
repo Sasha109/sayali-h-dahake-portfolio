@@ -108,6 +108,49 @@ const Projects = () => {
       ),
       link: "",
     },
+
+    {
+      title: "AI-Based People & Vehicle Tracking Platform",
+      category: "Computer Vision Platform",
+      shortOverview: "Led execution of an AI-powered computer vision platform that analyzes people and vehicle movement from recorded videos and live camera feeds.",
+      context: "<h4 class=\"text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3\">The Challenge</h4>\n\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>High-traffic environments such as construction sites, warehouses, and roadways lacked automated, AI-driven visibility into movement patterns of people and vehicles.</li>\n  <li>Existing systems relied on manual monitoring or basic CCTV footage, making it difficult to derive actionable insights for safety, traffic flow, and operational optimization.</li>\n</ul>\n\n<h4 class=\"text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3\">Key Constraints</h4>\n\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>Required high-accuracy object detection and tracking across varying video quality</li>\n  <li>Support for both recorded video uploads and live streams</li>\n  <li>Real-time and batch analytics without facial recognition or identity storage</li>\n  <li>High compute and storage demands for video processing</li>\n  <li>Clear scope boundaries to exclude alerts, violations, and personal identification</li>\n</ul>",
+      role: "<h4 class=\"text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3\">Role & Ownership</h4>\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>Product Manager owning AI product execution from PRD to production</li>\n  <li>Drove roadmap planning, milestone sequencing, and delivery governance</li>\n  <li>Acted as the bridge between AI/ML engineers, backend teams, and business stakeholders</li>\n  <li>Owned feature prioritization, scope control, and UAT readiness</li>\n</ul>\n\n<h4 class=\"text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3\">Discovery & Planning Inputs</h4>\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>Identified key AI use cases: movement tracking, flow analysis, congestion detection, and pattern visualization</li>\n  <li>Defined personas focused on safety monitoring and operational analytics</li>\n  <li>Collaborated with ML engineers to align model capabilities with business outcomes</li>\n  <li>Prioritized explainable outputs (graphs, heatmaps, reports) over black-box predictions</li>\n  <li>Explicitly excluded facial recognition to address privacy and compliance concerns</li>\n</ul>\n\n<h4 class=\"text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3\">Product Strategy</h4>\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>Designed a modular AI analytics architecture comprising:</li>\n</ul>\n<ul class=\"list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-6\">\n  <li>Deep learning–based object detection and tracking with persistent unique IDs</li>\n  <li>Session-based video analysis to support large datasets</li>\n  <li>AI-generated heatmaps, trajectories, and movement graphs</li>\n  <li>Configurable transit lines and zone-based counting</li>\n  <li>Speed estimation and time-based flow analysis</li>\n</ul>\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>Enabled data export (Excel) to integrate AI insights into downstream workflows</li>\n  <li>Built a cloud-native, scalable platform ready for future extensions such as alerts, predictive analytics, and edge deployment</li>\n</ul>",
+      solution: "",
+      outcomes: "",
+      technologies: [
+        "Computer Vision",
+        "AI/ML",
+        "Video Analytics",
+        "Object Tracking",
+        "Cloud Computing",
+      ],
+      overview: {
+        productName: "AI-Based People & Vehicle Tracking Platform",
+        domain: "Computer Vision / Safety & Operational Analytics",
+        role: "Product Manager (Execution & Scale)",
+        timeline: "~8 months (Discovery → MVP → UAT → Go-Live)",
+        platform: "B2B Cloud-based Web Application (Recorded + Live Video Analysis)",
+        summary: "Led execution of an AI-powered computer vision platform that analyzes people and vehicle movement from recorded videos and live camera feeds. The system leverages deep learning models to detect, track, and re-identify moving objects, generating heatmaps, trajectories, speed metrics, and flow analytics. Delivered a scalable, cloud-based AI solution enabling safety monitoring and operational insights across high-activity environments.",
+      },
+      icon: (
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+          />
+        </svg>
+      ),
+      link: "",
+    },
+
     {
       title: "Carbon Footprint Analytics Platform",
       category: "Sustainability & ESG Platform",
@@ -126,7 +169,7 @@ const Projects = () => {
         productName: "Carbon Footprint Analytics Platform",
         domain: "Sustainability & Environmental Compliance",
         role: "Product Manager (Execution & Delivery)",
-        timeline: "~20–25 business days",
+        timeline: "~2-3 months",
         platform: "B2B | Web Application + Analytics Engine",
         summary: "Led execution of a web-based carbon footprint and Life Cycle Assessment (LCA) platform enabling businesses to calculate, track, and report emissions across products and buildings. The platform provided configurable carbon coefficients, formula-based computation, and structured reporting aligned with emission scopes and categories. Delivered an end-to-end system supporting data ingestion, calculation logic, and detailed sustainability reporting within aggressive timelines.",
       },
@@ -167,7 +210,7 @@ const Projects = () => {
         productName: "Multi-Role Program Workflow Platform",
         domain: "Enterprise Program Management",
         role: "Product Manager",
-        timeline: "~ 6 months",
+        timeline: "~ 2-3 months",
         platform: "B2B Web Application (Role-based)",
         summary: "Led execution of platform enhancements for an enterprise program management system used to manage startup applications, evaluations, and funding workflows. The scope included introducing custom admin-level reporting, simplifying project management workflows, and launching a new digital innovation program with redesigned application flows. Delivered feature upgrades, UX improvements, and targeted technical refactors within a compressed timeline to improve platform usability, governance, and scalability.",
       },
@@ -184,47 +227,6 @@ const Projects = () => {
             strokeLinejoin="round"
             strokeWidth="2"
             d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-          />
-        </svg>
-      ),
-      link: "",
-    },
-    {
-      title: "AI-Based People & Vehicle Tracking Platform",
-      category: "Computer Vision Platform",
-      shortOverview: "Led execution of an AI-powered computer vision platform that analyzes people and vehicle movement from recorded videos and live camera feeds.",
-      context: "<h4 class=\"text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3\">The Challenge</h4>\n\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>High-traffic environments such as construction sites, warehouses, and roadways lacked automated, AI-driven visibility into movement patterns of people and vehicles.</li>\n  <li>Existing systems relied on manual monitoring or basic CCTV footage, making it difficult to derive actionable insights for safety, traffic flow, and operational optimization.</li>\n</ul>\n\n<h4 class=\"text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3\">Key Constraints</h4>\n\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>Required high-accuracy object detection and tracking across varying video quality</li>\n  <li>Support for both recorded video uploads and live streams</li>\n  <li>Real-time and batch analytics without facial recognition or identity storage</li>\n  <li>High compute and storage demands for video processing</li>\n  <li>Clear scope boundaries to exclude alerts, violations, and personal identification</li>\n</ul>",
-      role: "<h4 class=\"text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3\">Role & Ownership</h4>\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>Product Manager owning AI product execution from PRD to production</li>\n  <li>Drove roadmap planning, milestone sequencing, and delivery governance</li>\n  <li>Acted as the bridge between AI/ML engineers, backend teams, and business stakeholders</li>\n  <li>Owned feature prioritization, scope control, and UAT readiness</li>\n</ul>\n\n<h4 class=\"text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3\">Discovery & Planning Inputs</h4>\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>Identified key AI use cases: movement tracking, flow analysis, congestion detection, and pattern visualization</li>\n  <li>Defined personas focused on safety monitoring and operational analytics</li>\n  <li>Collaborated with ML engineers to align model capabilities with business outcomes</li>\n  <li>Prioritized explainable outputs (graphs, heatmaps, reports) over black-box predictions</li>\n  <li>Explicitly excluded facial recognition to address privacy and compliance concerns</li>\n</ul>\n\n<h4 class=\"text-lg font-semibold text-gray-900 dark:text-white mt-6 mb-3\">Product Strategy</h4>\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>Designed a modular AI analytics architecture comprising:</li>\n</ul>\n<ul class=\"list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-6\">\n  <li>Deep learning–based object detection and tracking with persistent unique IDs</li>\n  <li>Session-based video analysis to support large datasets</li>\n  <li>AI-generated heatmaps, trajectories, and movement graphs</li>\n  <li>Configurable transit lines and zone-based counting</li>\n  <li>Speed estimation and time-based flow analysis</li>\n</ul>\n<ul class=\"list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300\">\n  <li>Enabled data export (Excel) to integrate AI insights into downstream workflows</li>\n  <li>Built a cloud-native, scalable platform ready for future extensions such as alerts, predictive analytics, and edge deployment</li>\n</ul>",
-      solution: "",
-      outcomes: "",
-      technologies: [
-        "Computer Vision",
-        "AI/ML",
-        "Video Analytics",
-        "Object Tracking",
-        "Cloud Computing",
-      ],
-      overview: {
-        productName: "AI-Based People & Vehicle Tracking Platform",
-        domain: "Computer Vision / Safety & Operational Analytics",
-        role: "Product Manager (Execution & Scale)",
-        timeline: "~8 months (Discovery → MVP → UAT → Go-Live)",
-        platform: "B2B Cloud-based Web Application (Recorded + Live Video Analysis)",
-        summary: "Led execution of an AI-powered computer vision platform that analyzes people and vehicle movement from recorded videos and live camera feeds. The system leverages deep learning models to detect, track, and re-identify moving objects, generating heatmaps, trajectories, speed metrics, and flow analytics. Delivered a scalable, cloud-based AI solution enabling safety monitoring and operational insights across high-activity environments.",
-      },
-      icon: (
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
           />
         </svg>
       ),
