@@ -19,6 +19,7 @@ interface Project {
     platform: string;
     summary: string;
   };
+  impactCreated?: string[];
 }
 
 const Projects = () => {
@@ -49,6 +50,12 @@ const Projects = () => {
         platform: "B2B | Web Application + Edge AI System",
         summary: "Led execution of an AI-powered computer vision platform enabling real-time detection of 16+ industrial safety violations. Delivered MVP and scaled to multi-site enterprise deployment, achieving ~80–85% production accuracy and enabling proactive incident prevention.",
       },
+      impactCreated: [
+        "Delivered MVP for 16+ AI safety detection use cases, achieving ~80–85% production accuracy.",
+        "Enabled real-time violation alerts, improving response time for on-ground safety teams.",
+        "Scaled the platform from MVP to multi-site enterprise deployment across diverse industrial environments.",
+        "Reduced reliance on manual safety audits through automated AI-based monitoring integrated with existing CCTV systems.",
+      ],
       icon: (
         <svg
           className="w-6 h-6"
@@ -400,6 +407,21 @@ const Projects = () => {
                       {project.overview.summary}
                     </p>
                   </div>
+
+                  {project.impactCreated && project.impactCreated.length > 0 && (
+                    <div className="mt-4 pt-4 border-t border-blue-200 dark:border-gray-600">
+                      <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-2">
+                        Impact Created
+                      </p>
+                      <ul className="list-disc list-inside space-y-1">
+                        {project.impactCreated.map((impact, idx) => (
+                          <li key={idx} className="text-xs text-gray-900 dark:text-gray-100 leading-relaxed">
+                            {impact}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -537,6 +559,21 @@ const Projects = () => {
                       {selectedProject.overview.summary}
                     </p>
                   </div>
+
+                  {selectedProject.impactCreated && selectedProject.impactCreated.length > 0 && (
+                    <div className="mt-6 pt-6 border-t border-blue-200 dark:border-gray-600">
+                      <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-3">
+                        Impact Created
+                      </p>
+                      <ul className="list-disc list-inside space-y-2">
+                        {selectedProject.impactCreated.map((impact, idx) => (
+                          <li key={idx} className="text-sm text-gray-900 dark:text-gray-100 leading-relaxed">
+                            {impact}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               )}
 
