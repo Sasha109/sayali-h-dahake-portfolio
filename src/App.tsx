@@ -13,6 +13,14 @@ import "./App.css";
 function App() {
   const [activeSection, setActiveSection] = useState("home");
 
+  // Scroll to hero section on initial page load
+  useEffect(() => {
+    const heroElement = document.getElementById("home");
+    if (heroElement) {
+      heroElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = [
