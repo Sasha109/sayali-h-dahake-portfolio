@@ -149,12 +149,12 @@ const About = () => {
                     </h3>
                     <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                       <p>
-                        I'm a passionate Product Manager with 4+ years of
+                        I'm a passionate Product Manager with 4+ years of overall
                         experience in software product development,
                         cross-functional leadership, and Agile execution across
                         SaaS, e-commerce, and AI domains. Based in Bengaluru,
                         I've been delivering scalable B2B/B2C solutions since
-                        joining Codemonk in September 2022.
+                        joining Codemonk in 2022.
                       </p>
                       <p>
                         My journey in product management has taken me through
@@ -175,8 +175,8 @@ const About = () => {
                     </div>
                   </div>
 
-                  {/* Quick Stats */}
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {/* Quick Stats - 2x2 Grid Matrix */}
+                  <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
                       <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
                         3+
@@ -199,7 +199,7 @@ const About = () => {
                         AI & SaaS Platforms
                       </div>
                     </div>
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 md:col-span-2">
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
                       <div className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-1">
                         Products & Platforms
                       </div>
@@ -207,7 +207,7 @@ const About = () => {
                         B2B, B2C Products • Enterprise Platforms
                       </div>
                     </div>
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 md:col-span-2">
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
                       <div className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-1">
                         Domains
                       </div>
