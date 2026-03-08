@@ -176,13 +176,16 @@ const About = () => {
                   </div>
 
                   {/* Quick Stats */}
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
                       <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                        4+
+                        3+
                       </div>
                       <div className="text-sm text-gray-600 dark:text-gray-300">
-                        Years Experience
+                        Years
+                      </div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">
+                        Product Management
                       </div>
                     </div>
                     <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
@@ -190,7 +193,26 @@ const About = () => {
                         10+
                       </div>
                       <div className="text-sm text-gray-600 dark:text-gray-300">
-                        Products Delivered
+                        Projects
+                      </div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">
+                        AI & SaaS Platforms
+                      </div>
+                    </div>
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 md:col-span-2">
+                      <div className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-1">
+                        Products & Platforms
+                      </div>
+                      <div className="text-xs text-gray-600 dark:text-gray-300 leading-tight">
+                        B2B, B2C Products • Enterprise Platforms
+                      </div>
+                    </div>
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 md:col-span-2">
+                      <div className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-1">
+                        Domains
+                      </div>
+                      <div className="text-xs text-gray-600 dark:text-gray-300 leading-tight">
+                        AI Platforms • Enterprise SaaS • Computer Vision • Sustainability Tech • GovTech • Data & Analytics Platforms
                       </div>
                     </div>
                   </div>

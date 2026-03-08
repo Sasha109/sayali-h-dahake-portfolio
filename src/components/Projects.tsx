@@ -19,6 +19,7 @@ interface Project {
     platform: string;
     summary: string;
   };
+  impactCreated?: string[];
 }
 
 const Projects = () => {
@@ -49,6 +50,14 @@ const Projects = () => {
         platform: "B2B | Web Application + Edge AI System",
         summary: "Led execution of an AI-powered computer vision platform enabling real-time detection of 16+ industrial safety violations. Delivered MVP and scaled to multi-site enterprise deployment, achieving ~80–85% production accuracy and enabling proactive incident prevention.",
       },
+      impactCreated: [
+        "Reduced manual monitoring effort by 40%",
+        "Enabled real-time violation alerts for safety teams",
+        "Built scalable edge-based deployment architecture",
+        "Improved safety compliance visibility through centralized monitoring dashboards",
+        "Reduced incident response time by ~30% through instant alerting and reporting workflows",
+        "Standardized AI-driven safety monitoring across multiple sites",
+      ],
       icon: (
         <svg
           className="w-6 h-6"
@@ -90,6 +99,12 @@ const Projects = () => {
         platform: "B2B | Backend APIs + Search & Retrieval System",
         summary: "Led execution of an AI-driven music metadata enrichment platform designed to improve search, discovery, and commercial usability of a large-scale digital content library. The solution leveraged computer vision and ML models to extract rich, structured metadata from video content, enabling advanced filtering, relevance-based ranking, and faster content discovery. Delivered an API-first, scalable system that significantly improved retrieval efficiency for licensing, curation, and business teams.",
       },
+      impactCreated: [
+        "Enriched 20K+ video assets with AI-generated metadata",
+        "Reduced content discovery time by ~50% for internal teams",
+        "Improved search relevance by ~50% via metadata-weighted ranking",
+        "Enabled API-first metadata access for downstream search systems",
+      ],
       icon: (
         <svg
           className="w-6 h-6"
@@ -132,6 +147,12 @@ const Projects = () => {
         platform: "B2B Cloud-based Web Application (Recorded + Live Video Analysis)",
         summary: "Led execution of an AI-powered computer vision platform that analyzes people and vehicle movement from recorded videos and live camera feeds. The system leverages deep learning models to detect, track, and re-identify moving objects, generating heatmaps, trajectories, speed metrics, and flow analytics. Delivered a scalable, cloud-based AI solution enabling safety monitoring and operational insights across high-activity environments.",
       },
+      impactCreated: [
+        "Analyzed hours of video data using AI-based tracking and movement analytics",
+        "Reduced manual video monitoring effort by ~50%",
+        "Enabled real-time tracking of moving objects per stream",
+        "Improved operational visibility by ~50% via heatmaps and flow analytics",
+      ],
       icon: (
         <svg
           className="w-6 h-6"
@@ -173,6 +194,12 @@ const Projects = () => {
         platform: "B2B | Web Application + Analytics Engine",
         summary: "Led execution of a web-based carbon footprint and Life Cycle Assessment (LCA) platform enabling businesses to calculate, track, and report emissions across products and buildings. The platform provided configurable carbon coefficients, formula-based computation, and structured reporting aligned with emission scopes and categories. Delivered an end-to-end system supporting data ingestion, calculation logic, and detailed sustainability reporting within aggressive timelines.",
       },
+      impactCreated: [
+        "Reduced manual carbon reporting effort by ~50% via automated LCA-based calculations",
+        "Enabled analysis of 100+ datasets using structured data ingestion pipelines",
+        "Reduced sustainability reporting time through automated analytics and reporting",
+        "Built a configurable formula-based emissions engine for flexible calculations",
+      ],
       icon: (
         <svg
           className="w-6 h-6"
@@ -214,6 +241,11 @@ const Projects = () => {
         platform: "B2B Web Application (Role-based)",
         summary: "Led execution of platform enhancements for an enterprise program management system used to manage startup applications, evaluations, and funding workflows. The scope included introducing custom admin-level reporting, simplifying project management workflows, and launching a new digital innovation program with redesigned application flows. Delivered feature upgrades, UX improvements, and targeted technical refactors within a compressed timeline to improve platform usability, governance, and scalability.",
       },
+      impactCreated: [
+        "Reduced application review time via streamlined program workflows",
+        "Improved admin efficiency with custom reporting and data exports",
+        "Supported multi-role workflows across 4 user personas",
+      ],
       icon: (
         <svg
           className="w-6 h-6"
@@ -254,6 +286,13 @@ const Projects = () => {
         platform: "B2B2C | Portal + Matching Engine",
         summary: "Directed the end-to-end delivery of a government-backed platform connecting biotech startups with investors, mentors, and incubation centers. Focused on enabling transparent startup evaluation, efficient stakeholder collaboration, and seamless integration with India's startup ecosystem.",
       },
+      impactCreated: [
+        "Improved startup–investor discovery efficiency via a unified digital platform",
+        "Reduced investor evaluation time with structured startup profiles",
+        "Enabled secure collaboration across 3+ ecosystem stakeholders",
+        "Built a scalable government-backed biotech innovation portal",
+        "Improved transparency in startup evaluation and funding workflows",
+      ],
       icon: (
         <svg
           className="w-6 h-6"
@@ -400,6 +439,21 @@ const Projects = () => {
                       {project.overview.summary}
                     </p>
                   </div>
+
+                  {project.impactCreated && project.impactCreated.length > 0 && (
+                    <div className="mt-4 pt-4 border-t border-blue-200 dark:border-gray-600">
+                      <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-2">
+                        Impact Created
+                      </p>
+                      <ul className="list-disc list-inside space-y-1">
+                        {project.impactCreated.map((impact, idx) => (
+                          <li key={idx} className="text-xs text-gray-900 dark:text-gray-100 leading-relaxed">
+                            {impact}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -537,6 +591,21 @@ const Projects = () => {
                       {selectedProject.overview.summary}
                     </p>
                   </div>
+
+                  {selectedProject.impactCreated && selectedProject.impactCreated.length > 0 && (
+                    <div className="mt-6 pt-6 border-t border-blue-200 dark:border-gray-600">
+                      <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-3">
+                        Impact Created
+                      </p>
+                      <ul className="list-disc list-inside space-y-2">
+                        {selectedProject.impactCreated.map((impact, idx) => (
+                          <li key={idx} className="text-sm text-gray-900 dark:text-gray-100 leading-relaxed">
+                            {impact}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               )}
 
