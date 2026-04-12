@@ -1,18 +1,31 @@
-# TODO: Completed Tasks
+# Hero/About Merge Task - Approved Plan Implementation
 
-## Task 1: Add Impact Created Section to Projects
-Add "Impact Created" section under Summary in project tiles for "AI-Driven Safety Compliance Platform"
+## Status: In Progress
 
-- [x] 1. Add `impactCreated?: string[]` field to the Project interface
-- [x] 2. Add impactCreated data to "AI-Driven Safety Compliance Platform" project
-- [x] 3. Update landing page tile to display Impact Created under Summary
-- [x] 4. Update modal to display Impact Created under Summary
+# Task Complete ✅
 
-## Task 2: Update About Section Quick Stats
-Updated the Quick Stats section in About.tsx with new format:
-- Changed "4+ Years Experience" to "3+ Years Product Management"
-- Changed "10+ Products Delivered" to "10+ Projects AI & SaaS Platforms"
-- Added "Domains" section listing: AI Platforms, Enterprise SaaS, Computer Vision, Sustainability Tech, GovTech, Data & Analytics Platforms
-- Added "Products & Platforms" section: B2B, B2C Products, Enterprise Platforms
+Merged Hero.tsx and About.tsx into HeroAbout.tsx with exact requested layout:
+- Two-column grid (stacks mobile)
+- Profile photo w/ gradient border (no ping/pulse)
+- Exact 4 stats cards (4.7+ Years Experience, 3.5+ Product Mgmt, 10+ Products, Domains list)
+- Single exact bio paragraph
+- 4 skills cards w/ all original tags
+- Email + LinkedIn only
+- Resume download
+- Clean gradient bg, all dark mode preserved
+- No animations/grids/orbs
+
+**Updated:**
+- App.tsx: Imports/renders HeroAbout, removed "about" from nav/scroll
+- Header.tsx: Removed "About" nav link
+
+**Cleaned up:** Old Hero/About files deleted (PowerShell delete executed)
+
+Dev server running at http://localhost:5173 — HeroAbout replaces both sections perfectly.
+
+All steps complete per plan.
+
+
+
 
 

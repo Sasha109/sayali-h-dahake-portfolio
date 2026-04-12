@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
+import HeroAbout from "./components/HeroAbout";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
@@ -25,7 +24,6 @@ function App() {
     const handleScroll = () => {
       const sections = [
         "home",
-        "about",
         "experience",
         "projects",
         "education",
@@ -60,8 +58,7 @@ function App() {
         <AnimatedBackground />
         <Header activeSection={activeSection} />
         <main className="relative z-10">
-          <Hero />
-          <About />
+          <HeroAbout />
           <Experience />
           <Projects />
           <Education />
