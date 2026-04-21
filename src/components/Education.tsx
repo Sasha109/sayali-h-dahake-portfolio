@@ -2,10 +2,10 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+"py-14 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Education
           </h2>
@@ -44,52 +44,46 @@ const Education = () => {
               </div>
             </div>
 
-            {/* Tools & Skills Card */}
-            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 sm:p-8 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Tools & Skills
-              </h3>
-              <div className="space-y-5">
-                {[
-                  {
-                    category: "Product Management",
-                    items: ["PRD Writing", "Roadmapping", "Sprint Planning", "Backlog Grooming", "UAT", "Stakeholder Management"],
-                    color: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
-                  },
-                  {
-                    category: "Frameworks",
-                    items: ["RICE Prioritization", "Jobs-to-be-Done", "MoSCoW", "Phased Rollout", "OKRs", "KPI Definition"],
-                    color: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",
-                  },
-                  {
-                    category: "Tools",
-                    items: ["Jira", "Notion", "Figma", "Miro", "Confluence", "Linear"],
-                    color: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200",
-                  },
-                  {
-                    category: "Domains",
-                    items: ["AI/ML Products", "Computer Vision", "Enterprise SaaS", "Sustainability Tech", "B2B Platforms"],
-                    color: "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200",
-                  },
-                ].map((group, idx) => (
-                  <div key={idx}>
-                    <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">
-                      {group.category}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {group.items.map((item, i) => (
-                        <span
-                          key={i}
-                          className={`px-2.5 py-1 rounded-full text-xs font-medium ${group.color}`}
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 sm:p-8 
+  shadow-sm hover:shadow-md transition-all duration-300 
+  transform hover:-translate-y-1">
+  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 
+    dark:text-white mb-6">
+    Languages
+  </h3>
+  <div className="space-y-5">
+    {[
+      { language: "English", level: "Proficient", filled: 5, total: 6 },
+      { language: "Hindi", level: "Proficient", filled: 5, total: 6 },
+      { language: "Marathi", level: "Native", filled: 6, total: 6 },
+      { language: "German", level: "Beginner", filled: 2, total: 6 },
+    ].map((lang, idx) => (
+      <div key={idx} className="flex items-center justify-between">
+        <div>
+          <p className="text-sm font-semibold text-gray-900 
+            dark:text-white">
+            {lang.language}
+          </p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">
+            {lang.level}
+          </p>
+        </div>
+        <div className="flex gap-1.5">
+          {Array.from({ length: lang.total }).map((_, i) => (
+            <span
+              key={i}
+              className={`w-4 h-4 rounded-full ${
+                i < lang.filled
+                  ? "bg-blue-500 dark:bg-blue-400"
+                  : "bg-gray-200 dark:bg-gray-600"
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
           </div>
         </div>
       </div>

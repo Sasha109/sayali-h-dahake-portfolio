@@ -3,52 +3,10 @@ import { useState } from "react";
 const About = () => {
   const [imageError, setImageError] = useState(false);
 
-  const skills = {
-    "Product Management & Delivery": [
-      "End-to-End Product Lifecycle (Discovery → Delivery → Scale)",
-      "SDLC | Agile | Scrum",
-      "Roadmap Planning & Release Management",
-      "Feature Prioritization",
-      "Sprint Planning, Backlog Grooming & Retrospectives",
-      "PRD / BRD Creation & Acceptance Criteria",
-      "MVP Definition & Iterative Delivery",
-      "Risk, Dependency & Change Request Management",
-      "JIRA & Notion",
-      "Cross-functional Delivery (Dev, QA, Design, ML)",
-    ],
-    "Product Strategy, GTM & User Research": [
-      "Product Strategy & Vision Definition",
-      "Go-To-Market (GTM) Strategy & Launch Readiness",
-      "Market Research & Competitive Analysis",
-      "User Research (Qualitative & Quantitative)",
-      "Requirement Gathering & Stakeholder Workshops",
-      "Value Proposition & Feature Positioning",
-      "Client & Enterprise User Communication",
-      "User Adoption & Onboarding Optimization",
-    ],
-    "Analytics, Technical & Stakeholder Leadership": [
-      "KPI Mapping",
-      "A/B Testing",
-      "Effort Estimation & Capacity Planning",
-      "SQL (Basics) & Excel",
-      "API Understanding & Postman (PM-level)",
-      "AI / ML & Data-Intensive Product Exposure",
-      "SaaS & B2B Platform Experience",
-      "Stakeholder Management & Executive Reporting",
-      "Delivery Governance & Quality Mindset",
-    ],
-    Certifications: [
-      "Google Project Management Certificate (2024)",
-      "Microsoft Azure Cloud Services (2025)",
-      "Microsoft Business Analyst (2025)",
-      "German Language A1 Level (2020)",
-    ],
-  };
-
   return (
     <section
       id="about"
-      className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300 relative overflow-hidden"
+      className="py-14 bg-white dark:bg-gray-900 transition-colors duration-300 relative overflow-hidden"
     >
       {/* Advanced Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
@@ -77,7 +35,7 @@ const About = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             About Me
           </h2>
@@ -87,7 +45,7 @@ const About = () => {
         </div>
 
         {/* Profile Section */}
-        <div className="mb-16">
+        <div className="mb-10">
           <div className="max-w-4xl mx-auto">
             <div className="bg-gray-50/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden border border-gray-200/50 dark:border-gray-700/50">
               {/* Decorative elements */}
@@ -148,23 +106,23 @@ const About = () => {
                     </h3>
                     <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-8">
                       <p>
-                        I’m a Product Manager with 3+ years of experience
+                        I'm a Product Manager with 3.5+ years of experience
                         building and scaling software products across SaaS, AI,
                         e-commerce, sustainability, and enterprise domains.
-                        Based in Bengaluru, I’ve worked in fast-paced startup
+                        Based in Bengaluru, I've worked in fast-paced startup
                         environments where ownership, speed, and adaptability
                         matter.
                       </p>
                       <p>
                         My experience spans product discovery, roadmap planning,
                         stakeholder alignment, sprint execution, and launch
-                        management. I’ve led cross-functional collaboration
+                        management. I've led cross-functional collaboration
                         between engineering, design, QA, clients, and business
                         teams to turn ideas into practical, user-focused
                         solutions.
                       </p>
                       <p>
-                        I’m especially interested in AI-enabled products and
+                        I'm especially interested in AI-enabled products and
                         operational systems that solve real business problems. I
                         enjoy simplifying complexity, identifying opportunities,
                         and building products that create measurable value for
@@ -220,52 +178,11 @@ const About = () => {
           </div>
         </div>
 
-        {/* Technical Skills */}
-        <div>
-          <div className="text-center mb-12">
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Skills & Expertise
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              What I bring to the table — and what I've actually applied on the
-              job
-            </p>
-          </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            {Object.entries(skills).map(([category, skillList], index) => (
-              <div
-                key={category}
-                className="bg-gray-50/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden group border border-gray-200/50 dark:border-gray-700/50"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                {/* Animated border effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/5 via-transparent to-indigo-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400/50 via-indigo-400/50 to-purple-400/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 relative z-10">
-                  {category}
-                </h4>
-                <div className="flex flex-wrap gap-2 relative z-10">
-                  {skillList.map((skill, skillIndex) => (
-                    <span
-                      key={skill}
-                      className="inline-block bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm px-3 py-1 rounded-full text-sm text-gray-700 dark:text-gray-300 border border-gray-200/50 dark:border-gray-600/50 hover:border-blue-300 dark:hover:border-blue-500 hover:bg-blue-50/70 dark:hover:bg-blue-900/20 transition-all duration-200 whitespace-nowrap transform hover:scale-105 hover:shadow-md"
-                      style={{
-                        animationDelay: `${index * 100 + skillIndex * 50}ms`,
-                      }}
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
 };
 
 export default About;
+

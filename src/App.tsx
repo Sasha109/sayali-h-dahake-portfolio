@@ -24,9 +24,10 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = [
+  const sections = [
         "home",
         "about",
+        "skills",
         "experience",
         "projects",
         "education",
@@ -63,9 +64,9 @@ function App() {
         <main className="relative z-10">
           <Hero />
           <About />
+          <Skills />
           <Experience />
           <Projects />
-          <Skills />
           <Education />
           <Contact />
         </main>
