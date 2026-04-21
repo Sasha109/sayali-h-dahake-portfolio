@@ -176,30 +176,30 @@ const About = () => {
                   {/* Quick Stats - 2x2 Grid Matrix */}
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
-                      <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                        3+
+                        <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                        3.5+
+                      </div>
+                      <div className="text-sm text-gray-600 dark:text-gray-300">
+                        Years  
+                      </div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">
+                        as Product Manager
+                      </div>
+                    </div>
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
+                        <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                        4.8
                       </div>
                       <div className="text-sm text-gray-600 dark:text-gray-300">
                         Years
                       </div>
                       <div className="text-xs text-gray-500 dark:text-gray-400">
-                        Product Management
-                      </div>
-                    </div>
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
-                      <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                        10+
-                      </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">
-                        Projects
-                      </div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">
-                        AI, SaaS & Digital Platforms
+                        Total Industry Experience
                       </div>
                     </div>
                     <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
                       <div className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-1">
-                        Products & Platforms
+                        Years
                       </div>
                       <div className="text-xs text-gray-600 dark:text-gray-300 leading-tight">
                         B2B, B2C Products • Enterprise Systems
