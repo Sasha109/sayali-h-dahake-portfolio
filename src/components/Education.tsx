@@ -44,37 +44,46 @@ const Education = () => {
               </div>
             </div>
 
-            {/* Languages Card */}
+            {/* Tools & Skills Card */}
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6 sm:p-8 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Languages
+                Tools & Skills
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-5">
                 {[
-                  { name: "English", proficiency: "Proficient", level: 4 },
-                  { name: "Hindi", proficiency: "Proficient", level: 4 },
-                  { name: "Marathi", proficiency: "Native", level: 5 },
-                  { name: "German", proficiency: "Beginner", level: 2 },
-                ].map((lang, index) => (
-                  <div key={index} className="flex items-center justify-between">
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                        {lang.name}
-                      </h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">
-                        {lang.proficiency}
-                      </p>
-                    </div>
-                    <div className="flex space-x-1">
-                      {[...Array(5)].map((_, i) => (
-                        <div
+                  {
+                    category: "Product Management",
+                    items: ["PRD Writing", "Roadmapping", "Sprint Planning", "Backlog Grooming", "UAT", "Stakeholder Management"],
+                    color: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
+                  },
+                  {
+                    category: "Frameworks",
+                    items: ["RICE Prioritization", "Jobs-to-be-Done", "MoSCoW", "Phased Rollout", "OKRs", "KPI Definition"],
+                    color: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",
+                  },
+                  {
+                    category: "Tools",
+                    items: ["Jira", "Notion", "Figma", "Miro", "Confluence", "Linear"],
+                    color: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200",
+                  },
+                  {
+                    category: "Domains",
+                    items: ["AI/ML Products", "Computer Vision", "Enterprise SaaS", "Sustainability Tech", "B2B Platforms"],
+                    color: "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200",
+                  },
+                ].map((group, idx) => (
+                  <div key={idx}>
+                    <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">
+                      {group.category}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {group.items.map((item, i) => (
+                        <span
                           key={i}
-                          className={`w-3 h-3 rounded-full ${
-                            i < lang.level
-                              ? "bg-blue-600 dark:bg-blue-400"
-                              : "bg-gray-300 dark:bg-gray-600"
-                          }`}
-                        />
+                          className={`px-2.5 py-1 rounded-full text-xs font-medium ${group.color}`}
+                        >
+                          {item}
+                        </span>
                       ))}
                     </div>
                   </div>

@@ -82,8 +82,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Get to know me better - my skills, background, and what drives my
-            passion for development
+            Get to know me better — my background, what I build, and how I think about products.
           </p>
         </div>
 
@@ -145,39 +144,38 @@ const About = () => {
                 <div className="md:col-span-2 space-y-6">
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                      Product Manager & Strategic Leader
+                      Strategy, Execution & Scalable Digital Products
                     </h3>
-                    <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-8">
                       <p>
-                        I'm a passionate Product Manager with 4+ years of overall
-                        experience in software product development,
-                        cross-functional leadership, and Agile execution across
-                        SaaS, e-commerce, and AI domains. Based in Bengaluru,
-                        I've been delivering scalable B2B/B2C solutions since
-                        joining Codemonk in 2022.
+                        I’m a Product Manager with 3+ years of experience
+                        building and scaling software products across SaaS, AI,
+                        e-commerce, sustainability, and enterprise domains.
+                        Based in Bengaluru, I’ve worked in fast-paced startup
+                        environments where ownership, speed, and adaptability
+                        matter.
                       </p>
                       <p>
-                        My journey in product management has taken me through
-                        diverse projects from building AI-powered safety
-                        solutions using computer vision to developing carbon
-                        monitoring platforms and biotech investor portals. I
-                        excel at aligning technical feasibility with business
-                        goals while maintaining strong communication and
-                        problem-solving skills.
+                        My experience spans product discovery, roadmap planning,
+                        stakeholder alignment, sprint execution, and launch
+                        management. I’ve led cross-functional collaboration
+                        between engineering, design, QA, clients, and business
+                        teams to turn ideas into practical, user-focused
+                        solutions.
                       </p>
                       <p>
-                        When I'm not strategizing product roadmaps, I'm
-                        constantly learning about emerging technologies and
-                        market trends. I believe in creating products that not
-                        only meet user needs but also drive business growth and
-                        innovation.
+                        I’m especially interested in AI-enabled products and
+                        operational systems that solve real business problems. I
+                        enjoy simplifying complexity, identifying opportunities,
+                        and building products that create measurable value for
+                        users and organizations.
                       </p>
                     </div>
                   </div>
 
                   {/* Quick Stats - 2x2 Grid Matrix */}
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
                       <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
                         3+
                       </div>
@@ -188,7 +186,7 @@ const About = () => {
                         Product Management
                       </div>
                     </div>
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
                       <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
                         10+
                       </div>
@@ -196,23 +194,23 @@ const About = () => {
                         Projects
                       </div>
                       <div className="text-xs text-gray-500 dark:text-gray-400">
-                        AI & SaaS Platforms
+                        AI, SaaS & Digital Platforms
                       </div>
                     </div>
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
                       <div className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-1">
                         Products & Platforms
                       </div>
                       <div className="text-xs text-gray-600 dark:text-gray-300 leading-tight">
-                        B2B, B2C Products • Enterprise Platforms
+                        B2B, B2C Products • Enterprise Systems
                       </div>
                     </div>
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
                       <div className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-1">
                         Domains
                       </div>
                       <div className="text-xs text-gray-600 dark:text-gray-300 leading-tight">
-                        AI Platforms • Enterprise SaaS • Computer Vision • Sustainability Tech • GovTech • Data & Analytics Platforms
+                        AI • SaaS • E-commerce • Sustainability • Biotech • Analytics
                       </div>
                     </div>
                   </div>
@@ -229,7 +227,8 @@ const About = () => {
               Skills & Expertise
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Core competencies and tools I leverage to drive product success
+              What I bring to the table — and what I've actually applied on the
+              job
             </p>
           </div>
 
