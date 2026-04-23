@@ -2,10 +2,10 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+      className="py-14 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Education
           </h2>
@@ -44,43 +44,46 @@ const Education = () => {
               </div>
             </div>
 
-            {/* Languages Card */}
-            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 sm:p-8 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Languages
-              </h3>
-              <div className="space-y-4">
-                {[
-                  { name: "English", proficiency: "Proficient", level: 4 },
-                  { name: "Hindi", proficiency: "Proficient", level: 4 },
-                  { name: "Marathi", proficiency: "Native", level: 5 },
-                  { name: "German", proficiency: "Beginner", level: 2 },
-                ].map((lang, index) => (
-                  <div key={index} className="flex items-center justify-between">
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                        {lang.name}
-                      </h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">
-                        {lang.proficiency}
-                      </p>
-                    </div>
-                    <div className="flex space-x-1">
-                      {[...Array(5)].map((_, i) => (
-                        <div
-                          key={i}
-                          className={`w-3 h-3 rounded-full ${
-                            i < lang.level
-                              ? "bg-blue-600 dark:bg-blue-400"
-                              : "bg-gray-300 dark:bg-gray-600"
-                          }`}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-6 sm:p-8 
+  shadow-sm hover:shadow-md transition-all duration-300 
+  transform hover:-translate-y-1">
+  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 
+    dark:text-white mb-6">
+    Languages
+  </h3>
+  <div className="space-y-5">
+    {[
+      { language: "English", level: "Proficient", filled: 5, total: 6 },
+      { language: "Hindi", level: "Proficient", filled: 5, total: 6 },
+      { language: "Marathi", level: "Native", filled: 6, total: 6 },
+      { language: "German", level: "Beginner", filled: 2, total: 6 },
+    ].map((lang, idx) => (
+      <div key={idx} className="flex items-center justify-between">
+        <div>
+          <p className="text-sm font-semibold text-gray-900 
+            dark:text-white">
+            {lang.language}
+          </p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">
+            {lang.level}
+          </p>
+        </div>
+        <div className="flex gap-1.5">
+          {Array.from({ length: lang.total }).map((_, i) => (
+            <span
+              key={i}
+              className={`w-4 h-4 rounded-full ${
+                i < lang.filled
+                  ? "bg-blue-500 dark:bg-blue-400"
+                  : "bg-gray-200 dark:bg-gray-600"
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
           </div>
         </div>
       </div>

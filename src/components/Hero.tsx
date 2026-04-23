@@ -80,30 +80,26 @@ const Hero = () => {
               }`}
             >
               <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                Experienced Product Manager with 4+ years in software product
-                development, cross-functional leadership, and Agile execution
-                across SaaS, e-commerce, and AI domains. Currently delivering
-                scalable B2B/B2C solutions at{" "}
-                <span className="font-semibold text-blue-600 dark:text-blue-400">
-                  Codemonk
-                </span>
-                , with expertise in product strategy, AI-powered solutions, and
-                platform development. Skilled at defining roadmaps, aligning Stakeholders, 
-                and delivering masurable business outcomes.
+                I'm a Product Manager with 4+ years of experience building
+                AI-powered and enterprise SaaS products — from computer vision
+                safety platforms to music intelligence systems and carbon
+                analytics tools. I work at the intersection of user problems,
+                business goals, and technical feasibility, owning products
+                end-to-end from discovery through to production and scale.
+                Based in Bengaluru, currently at Codemonk.
               </p>
 
               {/* Key Highlights */}
               <div className="flex flex-wrap justify-center gap-3 mb-8">
                 {[
-                  "Product Management",
-                  "Agile/Scrum",
-                  "AI Solutions",
-                  "Cross-functional Leadership",
-                  "Client Communication",
-                  "Project Execution",
-                  "Release Management",
-                  "Scope Management",
-                  "Change Management",
+                  "AI Product Delivery",
+                  "User Research",
+                  "Product Strategy",
+                  "Roadmap Planning",
+                  "Data-Driven Decisions",
+                  "Stakeholder Alignment",
+                  "B2B SaaS",
+                  "Agile Execution",
                 ].map((highlight, index) => (
                   <span
                     key={highlight}

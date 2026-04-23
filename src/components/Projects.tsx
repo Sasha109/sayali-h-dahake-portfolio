@@ -20,6 +20,8 @@ interface Project {
     summary: string;
   };
   impactCreated?: string[];
+  myDecisions?: string[];
+  retrospective?: string[];
 }
 
 const Projects = () => {
@@ -51,12 +53,20 @@ const Projects = () => {
         summary: "Led execution of an AI-powered computer vision platform enabling real-time detection of 16+ industrial safety violations. Delivered MVP and scaled to multi-site enterprise deployment, achieving ~80–85% production accuracy and enabling proactive incident prevention.",
       },
       impactCreated: [
-        "Reduced manual monitoring effort by 40%",
-        "Enabled real-time violation alerts for safety teams",
-        "Built scalable edge-based deployment architecture",
-        "Improved safety compliance visibility through centralized monitoring dashboards",
-        "Reduced incident response time by ~30% through instant alerting and reporting workflows",
-        "Standardized AI-driven safety monitoring across multiple sites",
+        "Detection accuracy: from manual supervision (no baseline) → 80–85% automated detection across 16+ violation types",
+        "Incident response time: reduced by ~30% via instant alerting vs. previous post-incident audit process",
+        "Monitoring effort: reduced manual video review by ~40% through continuous automated detection",
+        "Deployment: scaled from single-site pilot → multi-site enterprise rollout within the same product lifecycle",
+        "Compliance visibility: centralized dashboard replaced fragmented manual safety logs across sites",
+      ],
+      myDecisions: [
+        "Chose a hybrid rule-based + ML architecture over pure ML because safety clients needed explainable alerts — a black-box model would have failed enterprise UAT",
+        "Prioritized 6 high-confidence violation types for MVP instead of all 16, to ship fast and build client trust before expanding scope",
+        "Insisted on configurable detection thresholds per site — a fixed threshold would have caused unacceptable false positives at sites with different lighting conditions",
+      ],
+      retrospective: [
+        "I'd push for earlier alignment on false positive tolerance with safety officers — we calibrated thresholds after complaints, not before. A structured threshold-setting workshop in week 1 would have saved 3+ sprint cycles of rework",
+        "I'd define a feedback loop from site supervisors into the retraining pipeline from day one, instead of treating retraining as an ad-hoc activity triggered by complaints",
       ],
       icon: (
         <svg
@@ -100,10 +110,20 @@ const Projects = () => {
         summary: "Led execution of an AI-driven music metadata enrichment platform designed to improve search, discovery, and commercial usability of a large-scale digital content library. The solution leveraged computer vision and ML models to extract rich, structured metadata from video content, enabling advanced filtering, relevance-based ranking, and faster content discovery. Delivered an API-first, scalable system that significantly improved retrieval efficiency for licensing, curation, and business teams.",
       },
       impactCreated: [
-        "Enriched 20K+ video assets with AI-generated metadata",
-        "Reduced content discovery time by ~50% for internal teams",
-        "Improved search relevance by ~50% via metadata-weighted ranking",
-        "Enabled API-first metadata access for downstream search systems",
+        "Content discovery time: reduced by ~50% for internal teams vs. prior manual search-and-tag workflow",
+        "Search relevance: improved by ~50% via metadata-weighted ranking vs. basic keyword search",
+        "Scale: enriched 20K+ video assets with AI-generated metadata (from zero structured metadata at baseline)",
+        "Manual tagging dependency: significantly reduced by automating extraction of 11 semantic attributes",
+        "Licensing readiness: content now discoverable by theme, mood, and context vs. title-only lookup before",
+      ],
+      myDecisions: [
+        "Scoped Phase 1 to video-only content (not audio) to reduce ML complexity and hit a 4-month delivery window — expanded to audio only after accuracy was validated",
+        "Defined 11 metadata attributes with business stakeholders before any model work started — prevented the classic trap of building what's technically easy vs. what's commercially useful",
+        "Added a human-in-the-loop validation layer for low-confidence extractions instead of auto-publishing — protected data quality at scale even at the cost of some throughput",
+      ],
+      retrospective: [
+        "I'd run a faster, scrappier proof-of-concept with 500 videos before committing to the full 50K scale plan — we assumed the accuracy would hold at scale, and it mostly did, but we got lucky",
+        "I'd involve the licensing team earlier in defining 'commercially useful' metadata — the initial attribute set was defined with editorial teams, and licensing had different needs we retrofitted late",
       ],
       icon: (
         <svg
@@ -148,10 +168,19 @@ const Projects = () => {
         summary: "Led execution of an AI-powered computer vision platform that analyzes people and vehicle movement from recorded videos and live camera feeds. The system leverages deep learning models to detect, track, and re-identify moving objects, generating heatmaps, trajectories, speed metrics, and flow analytics. Delivered a scalable, cloud-based AI solution enabling safety monitoring and operational insights across high-activity environments.",
       },
       impactCreated: [
-        "Analyzed hours of video data using AI-based tracking and movement analytics",
-        "Reduced manual video monitoring effort by ~50%",
-        "Enabled real-time tracking of moving objects per stream",
-        "Improved operational visibility by ~50% via heatmaps and flow analytics",
+        "Manual monitoring effort: reduced by ~50% by automating movement analysis from recorded video feeds",
+        "Operational visibility: improved by ~50% through heatmaps, trajectory data, and flow analytics vs. raw CCTV footage",
+        "Object tracking: enabled real-time tracking with persistent unique IDs per stream (vs. no automated tracking before)",
+        "Data export: enabled downstream integration via Excel export, replacing manual observation logs",
+      ],
+      myDecisions: [
+        "Explicitly excluded facial recognition from scope despite client interest — proactively flagged privacy and regulatory risk, which protected the client from compliance issues and built credibility",
+        "Chose session-based video processing over real-time streaming for the MVP — lower infrastructure cost and sufficient for the analytics use case at that stage",
+        "Prioritized heatmaps and trajectory exports over live alerts in v1 — the core value was operational insights, not incident response, and keeping scope tight enabled on-time delivery",
+      ],
+      retrospective: [
+        "I'd have pushed harder for a defined SLA on video processing latency from the start — we only discovered the client's expectations during UAT, which caused a late-stage scope negotiation",
+        "I'd add a self-serve configuration layer for zone drawing earlier — requiring engineering support for each new camera zone setup became a friction point during client onboarding",
       ],
       icon: (
         <svg
@@ -195,10 +224,20 @@ const Projects = () => {
         summary: "Led execution of a web-based carbon footprint and Life Cycle Assessment (LCA) platform enabling businesses to calculate, track, and report emissions across products and buildings. The platform provided configurable carbon coefficients, formula-based computation, and structured reporting aligned with emission scopes and categories. Delivered an end-to-end system supporting data ingestion, calculation logic, and detailed sustainability reporting within aggressive timelines.",
       },
       impactCreated: [
-        "Reduced manual carbon reporting effort by ~50% via automated LCA-based calculations",
-        "Enabled analysis of 100+ datasets using structured data ingestion pipelines",
-        "Reduced sustainability reporting time through automated analytics and reporting",
-        "Built a configurable formula-based emissions engine for flexible calculations",
+        "Reporting effort: reduced manual carbon calculation work by ~50% via automated LCA-based computation",
+        "Data scale: enabled analysis of 100+ datasets via structured CSV/XLSX ingestion pipelines (vs. manual entry before)",
+        "Reporting speed: significantly faster sustainability report generation vs. prior fragmented spreadsheet process",
+        "Auditability: full drill-down reporting by emission scope and category replaced opaque manual calculations",
+        "Delivered within 20–25 business days from kickoff to production — aggressive timeline met through phased scoping",
+      ],
+      myDecisions: [
+        "Designed formula-driven emission calculations (configurable coefficients) instead of hardcoded logic — this meant future regulatory changes could be handled by config updates, not code releases",
+        "Built a role-based architecture separating admin and customer flows from day one — even though the MVP only had one client, multi-tenancy readiness was a stated requirement for future growth",
+        "Phased delivery to tackle report generation last — it was the highest-risk module, and sequencing it after core data ingestion meant we had real data to test against, not mocks",
+      ],
+      retrospective: [
+        "With a 20–25 business day timeline, I'd have built a shared validation checklist with the client for the emission formula logic before sprint 1 — the late discovery of a coefficient mismatch cost us 4 days",
+        "I'd have prioritized a data validation error UX earlier — users uploading malformed CSVs got generic errors, and improving this post-launch would have reduced support volume significantly",
       ],
       icon: (
         <svg
@@ -316,10 +355,10 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300"
+      className="py-14 bg-white dark:bg-gray-900 transition-colors duration-300"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Projects
           </h2>
@@ -449,6 +488,21 @@ const Projects = () => {
                         {project.impactCreated.map((impact, idx) => (
                           <li key={idx} className="text-xs text-gray-900 dark:text-gray-100 leading-relaxed">
                             {impact}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {project.myDecisions && project.myDecisions.length > 0 && (
+                    <div className="mt-4 pt-4 border-t border-blue-200 dark:border-gray-600">
+                      <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-2">
+                        Key PM Decisions
+                      </p>
+                      <ul className="space-y-1">
+                        {project.myDecisions.map((decision, idx) => (
+                          <li key={idx} className="text-xs text-gray-900 dark:text-gray-100 leading-relaxed flex items-start gap-1.5">
+                            <span className="flex-shrink-0 mt-1 w-1.5 h-1.5 rounded-full bg-purple-500 dark:bg-purple-400"></span>
+                            {decision}
                           </li>
                         ))}
                       </ul>
@@ -606,6 +660,21 @@ const Projects = () => {
                       </ul>
                     </div>
                   )}
+                  {selectedProject.myDecisions && selectedProject.myDecisions.length > 0 && (
+                    <div className="mt-6 pt-6 border-t border-blue-200 dark:border-gray-600">
+                      <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-3">
+                        Key PM Decisions
+                      </p>
+                      <ul className="space-y-2">
+                        {selectedProject.myDecisions.map((decision, idx) => (
+                          <li key={idx} className="text-sm text-gray-900 dark:text-gray-100 leading-relaxed flex items-start gap-2">
+                            <span className="flex-shrink-0 mt-1.5 w-2 h-2 rounded-full bg-purple-500 dark:bg-purple-400"></span>
+                            {decision}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               )}
 
@@ -630,6 +699,21 @@ const Projects = () => {
                     className="text-gray-700 dark:text-gray-300 leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: selectedProject.role }}
                   />
+                </div>
+              )}
+              {selectedProject.retrospective && selectedProject.retrospective.length > 0 && (
+                <div className="mb-8">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 border-b border-gray-200 dark:border-gray-700 pb-3">
+                    What I'd Do Differently
+                  </h3>
+                  <ul className="space-y-3">
+                    {selectedProject.retrospective.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <span className="flex-shrink-0 mt-1.5 w-2 h-2 rounded-full bg-amber-500 dark:bg-amber-400"></span>
+                        <span className="text-sm">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
             </div>

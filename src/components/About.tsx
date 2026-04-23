@@ -3,52 +3,10 @@ import { useState } from "react";
 const About = () => {
   const [imageError, setImageError] = useState(false);
 
-  const skills = {
-    "Product Management & Delivery": [
-      "End-to-End Product Lifecycle (Discovery → Delivery → Scale)",
-      "SDLC | Agile | Scrum",
-      "Roadmap Planning & Release Management",
-      "Feature Prioritization",
-      "Sprint Planning, Backlog Grooming & Retrospectives",
-      "PRD / BRD Creation & Acceptance Criteria",
-      "MVP Definition & Iterative Delivery",
-      "Risk, Dependency & Change Request Management",
-      "JIRA & Notion",
-      "Cross-functional Delivery (Dev, QA, Design, ML)",
-    ],
-    "Product Strategy, GTM & User Research": [
-      "Product Strategy & Vision Definition",
-      "Go-To-Market (GTM) Strategy & Launch Readiness",
-      "Market Research & Competitive Analysis",
-      "User Research (Qualitative & Quantitative)",
-      "Requirement Gathering & Stakeholder Workshops",
-      "Value Proposition & Feature Positioning",
-      "Client & Enterprise User Communication",
-      "User Adoption & Onboarding Optimization",
-    ],
-    "Analytics, Technical & Stakeholder Leadership": [
-      "KPI Mapping",
-      "A/B Testing",
-      "Effort Estimation & Capacity Planning",
-      "SQL (Basics) & Excel",
-      "API Understanding & Postman (PM-level)",
-      "AI / ML & Data-Intensive Product Exposure",
-      "SaaS & B2B Platform Experience",
-      "Stakeholder Management & Executive Reporting",
-      "Delivery Governance & Quality Mindset",
-    ],
-    Certifications: [
-      "Google Project Management Certificate (2024)",
-      "Microsoft Azure Cloud Services (2025)",
-      "Microsoft Business Analyst (2025)",
-      "German Language A1 Level (2020)",
-    ],
-  };
-
   return (
     <section
       id="about"
-      className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300 relative overflow-hidden"
+      className="py-14 bg-white dark:bg-gray-900 transition-colors duration-300 relative overflow-hidden"
     >
       {/* Advanced Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
@@ -77,18 +35,17 @@ const About = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             About Me
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Get to know me better - my skills, background, and what drives my
-            passion for development
+            Get to know me better — my background, what I build, and how I think about products.
           </p>
         </div>
 
         {/* Profile Section */}
-        <div className="mb-16">
+        <div className="mb-10">
           <div className="max-w-4xl mx-auto">
             <div className="bg-gray-50/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden border border-gray-200/50 dark:border-gray-700/50">
               {/* Decorative elements */}
@@ -145,69 +102,68 @@ const About = () => {
                 <div className="md:col-span-2 space-y-6">
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                      Product Manager & Strategic Leader
+                      Strategy, Execution & Scalable Digital Products
                     </h3>
-                    <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-8">
                       <p>
-                        I'm a passionate Product Manager with 4+ years of overall
-                        experience in software product development,
-                        cross-functional leadership, and Agile execution across
-                        SaaS, e-commerce, and AI domains. Based in Bengaluru,
-                        I've been delivering scalable B2B/B2C solutions since
-                        joining Codemonk in 2022.
+                        I'm a Product Manager with 3.5+ years of experience
+                        building and scaling software products across SaaS, AI,
+                        e-commerce, sustainability, and enterprise domains.
+                        Based in Bengaluru, I've worked in fast-paced startup
+                        environments where ownership, speed, and adaptability
+                        matter.
                       </p>
                       <p>
-                        My journey in product management has taken me through
-                        diverse projects from building AI-powered safety
-                        solutions using computer vision to developing carbon
-                        monitoring platforms and biotech investor portals. I
-                        excel at aligning technical feasibility with business
-                        goals while maintaining strong communication and
-                        problem-solving skills.
+                        My experience spans product discovery, roadmap planning,
+                        stakeholder alignment, sprint execution, and launch
+                        management. I've led cross-functional collaboration
+                        between engineering, design, QA, clients, and business
+                        teams to turn ideas into practical, user-focused
+                        solutions.
                       </p>
                       <p>
-                        When I'm not strategizing product roadmaps, I'm
-                        constantly learning about emerging technologies and
-                        market trends. I believe in creating products that not
-                        only meet user needs but also drive business growth and
-                        innovation.
+                        I'm especially interested in AI-enabled products and
+                        operational systems that solve real business problems. I
+                        enjoy simplifying complexity, identifying opportunities,
+                        and building products that create measurable value for
+                        users and organizations.
                       </p>
                     </div>
                   </div>
 
                   {/* Quick Stats - 2x2 Grid Matrix */}
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
-                      <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                        3+
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
+                        <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                        3.5+
+                      </div>
+                      <div className="text-sm text-gray-600 dark:text-gray-300">
+                        Years  
+                      </div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">
+                        as Product Manager
+                      </div>
+                    </div>
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
+                        <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                        4.8
                       </div>
                       <div className="text-sm text-gray-600 dark:text-gray-300">
                         Years
                       </div>
                       <div className="text-xs text-gray-500 dark:text-gray-400">
-                        Product Management
+                        Total Industry Experience
                       </div>
                     </div>
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
-                      <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                        10+
-                      </div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">
-                        Projects
-                      </div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">
-                        AI & SaaS Platforms
-                      </div>
-                    </div>
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
                       <div className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-1">
-                        Products & Platforms
+                        Shipped Across 
                       </div>
                       <div className="text-xs text-gray-600 dark:text-gray-300 leading-tight">
-                        B2B, B2C Products • Enterprise Platforms
+                        B2B, B2C Products • Enterprise Systems
                       </div>
                     </div>
-                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300">
+                    <div className="bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm rounded-lg p-4 text-center border border-gray-200/50 dark:border-gray-600/50 hover:shadow-md transition-all duration-300 h-full flex flex-col justify-center">
                       <div className="text-sm font-bold text-blue-600 dark:text-blue-400 mb-1">
                         Domains
                       </div>
@@ -222,51 +178,11 @@ const About = () => {
           </div>
         </div>
 
-        {/* Technical Skills */}
-        <div>
-          <div className="text-center mb-12">
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Skills & Expertise
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Core competencies and tools I leverage to drive product success
-            </p>
-          </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            {Object.entries(skills).map(([category, skillList], index) => (
-              <div
-                key={category}
-                className="bg-gray-50/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden group border border-gray-200/50 dark:border-gray-700/50"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                {/* Animated border effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/5 via-transparent to-indigo-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400/50 via-indigo-400/50 to-purple-400/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 relative z-10">
-                  {category}
-                </h4>
-                <div className="flex flex-wrap gap-2 relative z-10">
-                  {skillList.map((skill, skillIndex) => (
-                    <span
-                      key={skill}
-                      className="inline-block bg-white/70 dark:bg-gray-700/70 backdrop-blur-sm px-3 py-1 rounded-full text-sm text-gray-700 dark:text-gray-300 border border-gray-200/50 dark:border-gray-600/50 hover:border-blue-300 dark:hover:border-blue-500 hover:bg-blue-50/70 dark:hover:bg-blue-900/20 transition-all duration-200 whitespace-nowrap transform hover:scale-105 hover:shadow-md"
-                      style={{
-                        animationDelay: `${index * 100 + skillIndex * 50}ms`,
-                      }}
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
 };
 
 export default About;
+
