@@ -21,7 +21,7 @@ interface Project {
   };
   impactCreated?: string[];
   myDecisions?: string[];
-  retrospective?: string[];
+
 }
 
 const Projects = () => {
@@ -60,14 +60,11 @@ const Projects = () => {
         "Compliance visibility: centralized dashboard replaced fragmented manual safety logs across sites",
       ],
       myDecisions: [
-        "Chose a hybrid rule-based + ML architecture over pure ML because safety clients needed explainable alerts — a black-box model would have failed enterprise UAT",
+        "Chose a hybrid rule-based + ML architecture over pure ML because safety clients needed explainable alerts",
         "Prioritized 6 high-confidence violation types for MVP instead of all 16, to ship fast and build client trust before expanding scope",
         "Insisted on configurable detection thresholds per site — a fixed threshold would have caused unacceptable false positives at sites with different lighting conditions",
       ],
-      retrospective: [
-        "I'd push for earlier alignment on false positive tolerance with safety officers — we calibrated thresholds after complaints, not before. A structured threshold-setting workshop in week 1 would have saved 3+ sprint cycles of rework",
-        "I'd define a feedback loop from site supervisors into the retraining pipeline from day one, instead of treating retraining as an ad-hoc activity triggered by complaints",
-      ],
+
       icon: (
         <svg
           className="w-6 h-6"
@@ -121,10 +118,7 @@ const Projects = () => {
         "Defined 11 metadata attributes with business stakeholders before any model work started — prevented the classic trap of building what's technically easy vs. what's commercially useful",
         "Added a human-in-the-loop validation layer for low-confidence extractions instead of auto-publishing — protected data quality at scale even at the cost of some throughput",
       ],
-      retrospective: [
-        "I'd run a faster, scrappier proof-of-concept with 500 videos before committing to the full 50K scale plan — we assumed the accuracy would hold at scale, and it mostly did, but we got lucky",
-        "I'd involve the licensing team earlier in defining 'commercially useful' metadata — the initial attribute set was defined with editorial teams, and licensing had different needs we retrofitted late",
-      ],
+
       icon: (
         <svg
           className="w-6 h-6"
@@ -178,10 +172,7 @@ const Projects = () => {
         "Chose session-based video processing over real-time streaming for the MVP — lower infrastructure cost and sufficient for the analytics use case at that stage",
         "Prioritized heatmaps and trajectory exports over live alerts in v1 — the core value was operational insights, not incident response, and keeping scope tight enabled on-time delivery",
       ],
-      retrospective: [
-        "I'd have pushed harder for a defined SLA on video processing latency from the start — we only discovered the client's expectations during UAT, which caused a late-stage scope negotiation",
-        "I'd add a self-serve configuration layer for zone drawing earlier — requiring engineering support for each new camera zone setup became a friction point during client onboarding",
-      ],
+
       icon: (
         <svg
           className="w-6 h-6"
@@ -235,10 +226,7 @@ const Projects = () => {
         "Built a role-based architecture separating admin and customer flows from day one — even though the MVP only had one client, multi-tenancy readiness was a stated requirement for future growth",
         "Phased delivery to tackle report generation last — it was the highest-risk module, and sequencing it after core data ingestion meant we had real data to test against, not mocks",
       ],
-      retrospective: [
-        "With a 20–25 business day timeline, I'd have built a shared validation checklist with the client for the emission formula logic before sprint 1 — the late discovery of a coefficient mismatch cost us 4 days",
-        "I'd have prioritized a data validation error UX earlier — users uploading malformed CSVs got generic errors, and improving this post-launch would have reduced support volume significantly",
-      ],
+
       icon: (
         <svg
           className="w-6 h-6"
@@ -701,24 +689,10 @@ const Projects = () => {
                   />
                 </div>
               )}
-              {selectedProject.retrospective && selectedProject.retrospective.length > 0 && (
-                <div className="mb-8">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 border-b border-gray-200 dark:border-gray-700 pb-3">
-                    What I'd Do Differently
-                  </h3>
-                  <ul className="space-y-3">
-                    {selectedProject.retrospective.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-gray-700 dark:text-gray-300 leading-relaxed">
-                        <span className="flex-shrink-0 mt-1.5 w-2 h-2 rounded-full bg-amber-500 dark:bg-amber-400"></span>
-                        <span className="text-sm">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
             </div>
           </div>
         )}
+
       </div>
     </section>
   );
