@@ -29,6 +29,7 @@ const Skills = () => {
         "Milestone & Risk Management",
         "UAT Planning & Sign-off",
         "Release Readiness & Deployment Governance",
+        "Post Go-Live Maintenance",
       ],
     },
     {
@@ -49,7 +50,6 @@ const Skills = () => {
         "ML Model Evaluation & Scoping",
         "Computer Vision Product Delivery",
         "API-First Product Design",
-        "NLP & Semantic Search Products",
         "Working with Engineering on Technical Trade-offs",
         "B2B SaaS Platform Experience",
       ],
@@ -60,7 +60,7 @@ const Skills = () => {
       items: [
         "Jira",
         "Notion",
-        "Postman (PM-level)",
+        "Postman",
         "SQL (Basics) & Excel",
         "Google Analytics",
       ],
